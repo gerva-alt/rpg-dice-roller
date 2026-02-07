@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Rolador de Dados RPG</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="container">
+    <header>
+      <img class="dice-icon" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3QgeD0iNSIgeT0iNSIgd2lkdGg9IjkwIiBoZWlnaHQ9IjkwIiByeD0iMTQiIGZpbGw9IiMyYjJiMmIiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSI0Ii8+PGNpcmNsZSBjeD0iNTAiIGN5PSI1MCIgcj0iOCIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg==" alt="Dado">
+      <h1>Rolador de Dados</h1>
+      <p>RPG de Mesa</p>
+    </header>
+
+    <section class="controls">
+      <div class="input-group">
+        <label for="faces">Faces do dado</label>
+        <input type="number" id="faces" min="2" placeholder="Ex: 6, 20, 100">
+      </div>
+
+      <div class="input-group">
+        <label for="quantity">Quantidade de dados</label>
+        <input type="number" id="quantity" min="1" placeholder="Ex: 1, 3, 5">
+      </div>
+
+      <div class="button-group">
+        <button id="rollButton" onclick="sortear()">Rolar Dados</button>
+        <button id="resetButton" onclick="resetar()">Resetar</button>
+    </div>
+    </section>
+
+    <section class="results">
+      <h2>Resultados</h2>
+      <div class="dice-area">
+        <!-- Resultados aparecem aqui via JavaScript -->
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
