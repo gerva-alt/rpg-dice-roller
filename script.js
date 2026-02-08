@@ -7,6 +7,12 @@ function sortear() {
     if(isNaN(faces.value || quantidade.value) || faces.value < 1 || quantidade.value < 1){
         return alert("Coloque números válidos!");
     }
+    if(faces.value > 100){
+        return alert("Você não deve usar um dado de mais de 100 faces!");
+    }
+    if(quantidade.value > 100){
+        return alert("Você não deve rolar mais que 100 dados!")
+    }
     resultados = [];
     for(let i = 0; i < quantidade.value; i++) {
         resultados.push(parseInt(Math.random()*parseInt(faces.value)+1));

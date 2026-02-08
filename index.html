@@ -17,12 +17,12 @@
     <section class="controls">
       <div class="input-group">
         <label for="faces">Faces do dado</label>
-        <input type="number" id="faces" min="2" placeholder="Ex: 6, 20, 100">
+        <input type="number" id="faces" min="2" max="100" placeholder="Ex: 6, 20, 100">
       </div>
 
       <div class="input-group">
         <label for="quantity">Quantidade de dados</label>
-        <input type="number" id="quantity" min="1" placeholder="Ex: 1, 3, 5">
+        <input type="number" id="quantity" min="1" max="100" placeholder="Ex: 1, 3, 5">
       </div>
 
       <div class="button-group">
@@ -33,8 +33,8 @@
 
     <section class="results">
       <h2>Resultados</h2>
-      <div class="dice-area">
-        <span id="results"></span>
+      <div class="dice-area" id="results">
+        
       </div>
     </section>
     
